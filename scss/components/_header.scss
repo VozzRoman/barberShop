@@ -99,15 +99,17 @@ text-decoration: none;
 }
 
 .header__mobile-list {
+width: 50px;
 font-weight: 600;
 line-height: 1.36;
 letter-spacing: 0.2em;
 background-color: $primery-bg;
-	padding: 10px 10px;
+	
 	transform: rotate(180deg);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	
 	
 	
