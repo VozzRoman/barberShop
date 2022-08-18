@@ -4,10 +4,12 @@
 	position: relative;
 	background-color:$primery-bg;
 	box-shadow: 0px 1px 5px 1px gray;
+	border-bottom: 1px solid $third-bg;
 }
 .header__container {
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 .logo {
@@ -24,7 +26,12 @@
 	width: 100%;
 	height: 100vh;
 	z-index: 20;
-	background-color: $third-bg;
+	transform: translateX(-100%);
+	
+	transition: transform 150ms linear;
+	&.active {
+		transform: translateX(0);
+	}
 }
 .header-menu__box{
 	margin-right: auto;
@@ -32,6 +39,8 @@
 	display: flex;
 	flex-direction: column;
 	padding: 0 0 100px 0;
+	background-color: hsla(226, 21%, 12%, 0.9);
+	overflow-y: auto;
 }
 .header__nav {
 	padding: 20px 20px;
@@ -81,23 +90,10 @@ text-decoration: none;
 .header-menu__contact{
 	padding: 0 20px;
 	align-self: center;
+	text-align: center;
 	
 }
-.button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 12px 20px;
-	border: 1px solid $hover-color;
-	color: $second-font-color;
-	text-transform: uppercase;
-	border-radius: 25px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.09em;
-	background-color: transparent;
-}
+
 .header__mobile-list {
 font-weight: 600;
 line-height: 1.36;

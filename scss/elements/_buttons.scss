@@ -5,3 +5,27 @@
 }
 .button-burger__icon {
 }
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 20px;
+	border: 1px solid $hover-color;
+	color: $second-font-color;
+	text-transform: uppercase;
+	border-radius: 25px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	background-color: transparent;
+}
+
+.button--margin {
+	margin-top: 20px;
+}
+.about-best__button--color {
+	color: $main-font-color;
+	margin-bottom: 20px;
+}
