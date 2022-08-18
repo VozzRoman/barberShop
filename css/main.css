@@ -288,10 +288,14 @@ address {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: white;
   box-shadow: 0px 1px 5px 1px gray;
   border-bottom: 1px solid #191C26;
+  z-index: 55;
 }
 
 .header__container {
@@ -495,7 +499,7 @@ address {
   background-color: white;
   margin-bottom: 10px;
   opacity: 1;
-  transition: opacity 300ms linear;
+  transition: width 300ms linear;
 }
 .section__swiper-pagination .swiper-pagination-bullet-active {
   width: 18px;
@@ -649,4 +653,5 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   color: #303030;
+  padding-top: 76px;
 }/*# sourceMappingURL=main.css.map */
