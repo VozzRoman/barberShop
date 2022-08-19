@@ -1,0 +1,140 @@
+//------footer-----//
+.footer {
+    padding: 100px 0;
+    background-color: $third-bg;
+}
+
+.footer__container {}
+
+
+.footer-big {}
+
+.footer-big__list {}
+
+.footer-big__online-item {
+@media screen and (max-width:768px){
+    margin-bottom: 40px;
+    }
+}
+   
+
+.footer-big__online-title {}
+
+.footer-title {
+    display: block;
+    color: $second-font-color;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+}
+
+.form {}
+
+.form__date {
+    margin-bottom: 40px;
+   
+}
+
+.form__field {
+    position: relative;
+    margin-bottom: 40px;
+    &:nth-child(2) {
+            margin-bottom: 0;
+        }
+          &:nth-child(3) {
+              margin-bottom: 0;
+          }
+}
+
+.form__label {
+    color: $contact-color;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:color 300ms linear, transform 300ms linear;
+
+}
+
+.form__input {
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    border-right: none;
+    border-left: none;
+    height: 24px;
+    outline: transparent;
+    color:$second-font-color;
+        font-weight: 600;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+@media screen and (min-width:1170px){
+    &:hover,
+    &:focus{
+        border-bottom: 1px solid $primery-bg;
+    }
+}
+}
+.form__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label {
+    color: $second-font-color;
+    transform: translateY(-100%);
+    
+}
+
+.form__message {
+}
+
+.footer__texarea {
+        border-top: none;
+        resize: none;
+        height: 76px;
+}
+
+
+.footer-big__contact-item {
+    text-align: center;
+}
+
+.footer-big__adress-list {
+   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+.footer-big__adress{
+    display: block;
+    margin-bottom: 40px;
+}
+.footer-big__adress-item {}
+
+.footer-big__adress-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $contact-color;
+    text-decoration: none;
+}
+
+.footer__big-icon {
+    margin-right: 18px;
+}
+
+.footer-big__working {}
+
+
+
+
+.footer-big__hours {
+    color: $contact-color;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}

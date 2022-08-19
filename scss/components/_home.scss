@@ -78,6 +78,15 @@
 		margin-right: 20px;
 	}
 }
+.footer-big--text {
+	justify-content: center;
+	color: $second-font-color;
+		&:before {
+				content: '';
+				width: 60px;
+				
+			}
+}
 .section-slider__title {
 font-family: 'Raleway';
 font-weight: 700;
@@ -245,3 +254,201 @@ text-align: center;
 	margin-bottom: 20px;
 }
 
+//-----------school-------//
+
+.school__container {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+
+
+.school__items {}
+
+.school__box {}
+
+.school__elem-one {
+@media screen and (max-width:768px){
+	margin-bottom: 20px;
+}
+
+}
+
+.elem-one__school {
+	width: 100%;
+	background-color: $secodary-bg;
+	padding: 20px 44px;
+@media screen and (max-width:768px){
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	
+}
+}
+
+.elem-one__number {
+	color: $main-font-color;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.35;
+	text-align: center;
+	letter-spacing: 0.05em;
+	
+	margin-bottom: 6px;
+	sup{
+		color: rgba(255, 108, 0, 1);
+		font-size: 25px;
+		font-weight: 600;
+	}
+}
+
+.elem-one__text {
+	font-weight: 600;
+	font-size: 16px;
+		line-height: 1.36;
+		text-align: center;
+	color: $main-font-color;
+}
+
+.school__elem-tow {}
+
+.title-info {}
+
+.title-info__text {}
+
+.content-text {}
+
+.title-info__title {}
+
+.school__title--color {
+	color: $main-font-color;
+	
+
+}
+
+.school__text {
+	font-size: 18px;
+		line-height: 1.67;
+		letter-spacing: 0.02em;
+		color: $chapter-text-color;
+}
+//--------Our Barbers----// 
+
+
+.our-barbers {
+	background-color: $secodary-bg;
+}
+
+.our-barbers__container {}
+
+.title-info__title {}
+
+.school__title--color {}
+
+.our-barbers__list {}
+
+.our-barbers__item {
+	@media screen and (max-width:768px){
+		margin-bottom: 40px;
+	}
+}
+
+.our-barbers__link {
+	text-decoration: none;
+}
+
+.card {}
+
+.card__column {}
+
+.card__img {
+	margin-bottom: 30px;
+}
+
+.card__items {
+	text-align: center;
+}
+
+.card__name {
+	color: $main-font-color;
+	font-size: 18px;
+	line-height: 1.38;
+	text-align: center;
+	letter-spacing: 0.02em;
+	margin-bottom: 8px;
+}
+
+.card__type {
+	font-size: 14px;
+	line-height: 1.35;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: $hover-color;
+	margin-bottom: 30px;
+}
+
+.social-list {
+	display: flex;
+	justify-content: center;
+}
+
+.social__item {
+	&:not(:last-child){
+		margin-right: 10px;
+	}
+}
+
+.social__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: $primery-bg;
+	@media screen and (min-width: 1170px){
+			&:focus,
+				&:hover {
+					.social__svg {
+						fill: $hover-color;
+					}
+				}
+	}
+
+}
+
+//--------Bread--------//
+
+.section {}
+
+.beard {}
+
+.beard__container {}
+
+.container {}
+
+.beard__text {}
+
+.content-text {}
+
+.beard__list {
+
+}
+
+.beard__item {
+		@media screen and (max-width:768px) {
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+}
+
+.beard__img {
+@media screen and (max-width:768px){
+	img {
+			width: 100%;
+		}
+}
+	
+}
