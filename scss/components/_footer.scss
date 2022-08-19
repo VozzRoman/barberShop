@@ -67,6 +67,7 @@
     width: 100%;
     background-color: transparent;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    border-top: none;
     border-right: none;
     border-left: none;
     height: 24px;
@@ -92,7 +93,6 @@
 }
 
 .footer__texarea {
-        border-top: none;
         resize: none;
         height: 76px;
 }

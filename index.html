@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/main.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
@@ -110,10 +111,10 @@
 			<div class="about__container container">
 				<ul class="about-picture__list">
 					<li class="about-picture__items">
-						<div class="about-picture__picture">
+						<div class="about-picture__picture" data-aos="fade-left">
 							<img src="./image/mobile/about-img1-mobile.jpg" alt="bread cut">
 						</div>
-						<div class="about-picture__picture">
+						<div class="about-picture__picture" data-aos="fade-right">
 							<img src="./image/mobile/about-img2-mobile.jpg" alt="bread cut">
 						</div>
 					</li>
@@ -122,7 +123,7 @@
 					<li class="about-best__items">
 						<div class="title-info about-best__info--margin">
 							<p class="title-info__text content-text">about</p>
-							<h2 class="title-info__title about-best__title--color">Best Barbershop in your city</h2>
+							<h2 class="title-info__title about-best__title--color" data-aos="zoom-in">Best Barbershop in your city</h2>
 						</div>
 						<strong class="about-best__advice">If you want to add more confidence to your image, you should definitely visit
 							us.</strong>
@@ -141,9 +142,9 @@
 		</section>
 		<section class="section services">
 			<div class="services__container container">
-				<div class="title-info">
+				<div class="title-info ">
 					<p class="title-info__text content-text">SPEND YOUR TIME WITH THE BEST MASTERS</p>
-					<h2 class="title-info__title">Services and prices</h2>
+					<h2 class="title-info__title" data-aos="zoom-in">Services and prices</h2>
 				</div>
 				<div class="service__body">
 					<ul class="service__list">
@@ -236,14 +237,14 @@
 			<div class="our-barbers__container container">
 					<div class="title-info">
 						<p class="title-info__text content-text">for true enjoyers of the atmosphere</p>
-						<h2 class="title-info__title school__title--color">Our barbers</h2>
+						<h2 class="title-info__title school__title--color" data-aos="zoom-in">Our barbers</h2>
 					</div>
 					<ul class="our-barbers__list">
 						<li class="our-barbers__item">
 							<a href="" class="our-barbers__link">
 								<div class="card">
 									<div class="card__column">
-										<div class="card__img">
+										<div data-aos="fade-left" class="card__img">
 											<img src="./image/mobile/barbers1-mobile.jpg" alt="barbers">
 										</div>
 										<div class="card__items">
@@ -286,7 +287,7 @@
 							<a href="" class="our-barbers__link">
 								<div class="card">
 									<div class="card__column">
-										<div class="card__img">
+										<div data-aos="fade-right" class="card__img">
 											<img src="./image/mobile/barbers2-mobile.jpg" alt="barbers">
 										</div>
 										<div class="card__items">
@@ -331,7 +332,7 @@
 							<a href="" class="our-barbers__link">
 								<div class="card">
 									<div class="card__column">
-										<div class="card__img">
+										<div data-aos="fade-left" class="card__img">
 											<img src="./image/mobile/barbers3-mobile.jpg" alt="barbers">
 										</div>
 										<div class="card__items">
@@ -382,22 +383,22 @@
 				<p class="beard__text content-text">in Latin, "barba" means "beard"</p>
 				<ul class="beard__list">
 					<li class="beard__item">
-						<div class="beard__img">
+						<div class="beard__img" data-aos="zoom-in">
 							<img src="./image/mobile/bread1-mobile.jpg" alt="cut haircut">
 						</div>
 					</li>
 					<li class="beard__item">
-							<div class="beard__img">
+							<div class="beard__img" data-aos="zoom-in">
 								<img src="./image/mobile/bread2-mobile.jpg" alt="cut haircut">
 							</div>
 					</li>
 					<li class="beard__item">
-							<div class="beard__img">
+							<div class="beard__img" data-aos="zoom-in">
 								<img src="./image/mobile/bread3-mobile.jpg" alt="cut haircut">
 							</div>
 					</li>
 					<li class="beard__item">
-						<div class="beard__img">
+						<div class="beard__img" data-aos="zoom-in">
 							<img src="./image/mobile/bread4-mobile.jpg" alt="cut haircut">
 						</div>
 					</li>
@@ -410,7 +411,7 @@
 				<div class="footer-big">
 					<ul class="footer-big__list">
 						<li class="footer-big__online-item">
-							<h2 class="footer-big__online-title footer-title">Online-booking</h2>
+							<h2 class="footer-big__online-title footer-title" data-aos="zoom-in">Online-booking</h2>
 							<form class="form" autocomplete="on">
 								<div class="form__date">
 										<div class="form__field">
@@ -438,7 +439,7 @@
 							</form>
 						</li>
 						<li class="footer-big__contact-item">
-							<h2 class="footer-big__title footer-title">Contacts</h2>
+							<h2 class="footer-big__title footer-title" data-aos="zoom-in">Contacts</h2>
 							<adress class="footer-big__adress">
 								<ul class="footer-big__adress-list">
 									<li class="footer-big__adress-item">
@@ -470,6 +471,10 @@
 	</main>
 	
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/script.js"></script>
 </html>
