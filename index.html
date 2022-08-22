@@ -10,28 +10,27 @@
 	<link rel="stylesheet" href="./css/main.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
 	<header class="header">
 		<div class="header__container container">
-			<a href="" class="logo animate__animated animate__shakeY"><img src="./image/icon/logo.svg" alt="logo"></a>
+			<a href="" class="logo"><img src="./image/icon/logo.svg" alt="logo"></a>
 			<div class="header__menu">
 				<div class="header-menu__box">
 						<nav class="header__nav">
 				<ul class="header__list">
 					<li class="header__item">
-						<a href="" class="header__link header__link--active">About</a>
+						<a href="#about" class="header__link header__link--active">About</a>
 					</li>
 						<li class="header__item">
-						<a href="" class="header__link">Services and prices</a>
+						<a href="#service" class="header__link">Services and prices</a>
 					</li>
 						<li class="header__item">
-						<a href="" class="header__link">Barbers</a>
+						<a href="#barbers" class="header__link">Barbers</a>
 					</li>
 						<li class="header__item">
-						<a href="" class="header__link">Contacts</a>
+						<a href="#contacts" class="header__link">Contacts</a>
 					</li>
 				</ul>
 				</nav>
@@ -58,7 +57,7 @@
 	</header>
 	<main>
 		<section class="section-slider">
-			<div class="section-slider__container container">
+			<div class="section-slider__box container">
 				<ul class="section-slider__list">
 					<li class="section-slider__item">
 						<a href="" class="section-slider__link">Instagram</a>
@@ -73,17 +72,33 @@
    					 <!-- Slides -->
    						 <div class="section-slider__swiper-slide swiper-slide">	
 								<div class="section-slider__content slider-content">
-									<img src="./image/mobile/Slider1__480-mobile.jpg" alt="стрижка">
+										<picture>
+											<source media="(min-width:1200px)" srcset="./image/pc/Slider1__1070-pc.jpg 1x, ./image/pc/Slider1__2140-pc.jpg 2x">
+											<source media="(min-width:768px)" srcset="./image/tablet/Slider1__609-tablet.jpg 1x, ./image/tablet/Slider1__1218-tablet.jpg 2x">
+											<source media="(max-width:767px)" srcset="./image/mobile/Slider1__480-mobile.jpg 1x, ./image/mobile/Slider1__960-mobile.jpg 2x">
+											<img src="./image/mobile/Slider1__480-mobile.jpg" alt="стрижка">
+										</picture>
 								</div>
 							</div>
 								 <div class="section-slider__swiper-slide swiper-slide">	
 								<div class="section-slider__content slider-content">
-									<img src="./image/mobile/Slider2__480-mobile.jpg" alt="стрижка">
+										<picture>
+											<source media="(min-width:1200px)" srcset="./image/pc/Slider2__1070-pc.jpg 1x, ./image/pc/Slider2__2142-pc.jpg 2x">
+											<source media="(min-width:768px)" srcset="./image/tablet/Slider2__609-tablet.jpg 1x, ./image/tablet/Slider2__1218-tablet.jpg 2x">
+											<source media="(max-width:767px)" srcset="./image/mobile/Slider2__480-mobile.jpg 1x, ./image/mobile/Slider2__960-mobile.jpg 2x">
+											<img src="./image/mobile/Slider2__480-mobile.jpg" alt="стрижка">
+										</picture>
+									
 								</div>
 							</div>
 								 <div class="section-slider__swiper-slide swiper-slide">	
 								<div class="section-slider__content slider-content">
-									<img src="./image/mobile/Slider3__480-mobile.jpg" alt="стрижка">
+									<picture>
+											<source media="(min-width:1200px)" srcset="./image/pc/Slider3__1070-pc.jpg 1x, ./image/pc/Slider3__2142-pc.jpg 2x">
+											<source media="(min-width:768px)" srcset="./image/tablet/Slider3__609-tablet.jpg 1x, ./image/tablet/Slider3__1218-tablet.jpg 2x">
+											<source media="(max-width:767px)" srcset="./image/mobile/Slider3__480-mobile.jpg 1x, ./image/mobile/Slider3__960-mobile.jpg 2x">
+											<img src="./image/mobile/Slider3__480-mobile.jpg" alt="стрижка">
+									
 								</div>
 							</div>
 							
@@ -107,15 +122,26 @@
 				</div>
 			
 		</section>
-		<section class="section about">
+		<section id="about" class="section about">
 			<div class="about__container container">
 				<ul class="about-picture__list">
 					<li class="about-picture__items">
 						<div class="about-picture__picture" data-aos="fade-left">
-							<img src="./image/mobile/about-img1-mobile.jpg" alt="bread cut">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./image/pc/about-img1-pc.jpg 1x, ./image/pc/about-img1@2x-pc.jpg 2x">
+								<source media="(min-width:768px)" srcset="./image/mobile/about-img1-mobile.jpg 1x, ./image/mobile/about-img1@2x-mobile.jpg 2x">
+								<source media="(min-width:767px)" srcset="./image/mobile/about-img1-mobile.jpg 1x, ./image/mobile/about-img1@2x-mobile.jpg 2x">
+								<img media="(max-width:767px)" src="./image/mobile/about-img1-mobile.jpg" alt="bread cut">
+							</picture>
+							
 						</div>
 						<div class="about-picture__picture" data-aos="fade-right">
-							<img src="./image/mobile/about-img2-mobile.jpg" alt="bread cut">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./image/pc/about-img2-pc.jpg 1x, ./image/pc/about-img2@2x-pc.jpg 2x">
+								<source media="(min-width:1200px)" srcset="./image/mobile/about-img2-mobile.jpg 1x, ./image/mobile/about-img2@2x-mobile.jpg 2x">
+								<source media="(min-width:1200px)" srcset="./image/mobile/about-img2-mobile.jpg 1x, ./image/mobile/about-img2@2x-mobile.jpg 2x">
+								<img src="./image/mobile/about-img2-mobile.jpg" alt="bread cut">
+							</picture>
 						</div>
 					</li>
 				</ul>
@@ -140,7 +166,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="section services">
+		<section id="service" class="section services">
 			<div class="services__container container">
 				<div class="title-info ">
 					<p class="title-info__text content-text">SPEND YOUR TIME WITH THE BEST MASTERS</p>
@@ -193,6 +219,7 @@
 					</li>
 					</ul>
 				</div>
+				<button class="button button-service">Online-booking</button>
 
 			</div>
 		</section>
@@ -233,9 +260,9 @@
 			
 
 		</section>
-		<section class="section our-barbers">
+		<section id="barbers" class="section our-barbers">
 			<div class="our-barbers__container container">
-					<div class="title-info">
+					<div class="title-info our-barbers__info">
 						<p class="title-info__text content-text">for true enjoyers of the atmosphere</p>
 						<h2 class="title-info__title school__title--color" data-aos="zoom-in">Our barbers</h2>
 					</div>
@@ -245,7 +272,13 @@
 								<div class="card">
 									<div class="card__column">
 										<div data-aos="fade-left" class="card__img">
-											<img src="./image/mobile/barbers1-mobile.jpg" alt="barbers">
+											<picture>
+												<source media="(min-width:1200px)" srcset="./image/pc/barbers1-pc.jpg 1x, ./image/pc/barbers1_740-pc.jpg 2x">
+												<source media="(min-width:768px)" srcset="./image/mobile/barbers1-mobile.jpg 1x, ./image/mobile/barbers1-mobile@2x.jpg 2x">
+												<source media="(max-width:767px)" srcset="./image/mobile/barbers1-mobile.jpg 1x, ./image/mobile/barbers1-mobile@2x.jpg 2x">
+												<img src="./image/mobile/barbers1-mobile.jpg" alt="barbers">
+											</picture>
+											
 										</div>
 										<div class="card__items">
 											<div class="card__name">John Smith</div>
@@ -288,7 +321,13 @@
 								<div class="card">
 									<div class="card__column">
 										<div data-aos="fade-right" class="card__img">
-											<img src="./image/mobile/barbers2-mobile.jpg" alt="barbers">
+											<picture>
+												<source media="(min-width:1200px)" srcset="./image/pc/barbers2-pc.jpg 1x, ./image/pc/barbers2_740-pc.jpg 2x">
+												<source media="(min-width:768px)" srcset="./image/mobile/barbers2-mobile.jpg 1x, ./image/mobile/barbers2-mobile@2x.jpg 2x">
+												<source media="(max-width:767px)" srcset="./image/mobile/barbers2-mobile.jpg 1x, ./image/mobile/barbers2-mobile@2x.jpg 2x">
+														<img src="./image/mobile/barbers2-mobile.jpg" alt="barbers">
+											</picture>
+										
 										</div>
 										<div class="card__items">
 											<div class="card__name">Michele Doe</div>
@@ -333,7 +372,13 @@
 								<div class="card">
 									<div class="card__column">
 										<div data-aos="fade-left" class="card__img">
-											<img src="./image/mobile/barbers3-mobile.jpg" alt="barbers">
+												<picture>
+													<source media="(min-width:1200px)" srcset="./image/pc/barbers3-pc.jpg 1x, ./image/pc/barbers3_740-pc.jpg 2x">
+													<source media="(min-width:768px)" srcset="./image/mobile/barbers3-mobile.jpg 1x, ./image/mobile/barbers3-mobile@2x.jpg 2x">
+													<source media="(max-width:767px)" srcset="./image/mobile/barbers3-mobile.jpg 1x, ./image/mobile/barbers3-mobile@2x.jpg 2x">
+													<img src="./image/mobile/barbers3-mobile.jpg" alt="barbers">
+												</picture>
+											
 										</div>
 										<div class="card__items">
 											<div class="card__name">Alan Black</div>
@@ -384,35 +429,59 @@
 				<ul class="beard__list">
 					<li class="beard__item">
 						<div class="beard__img" data-aos="zoom-in">
-							<img src="./image/mobile/bread1-mobile.jpg" alt="cut haircut">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./image/pc/bread1-pc.jpg 1x, ./image/pc/bread1_540-pc@2x.jpg 2x">
+								<source media="(min-width:768px)" srcset="./image/mobile/bread1-mobile.jpg 1x, ./image/mobile/bread1-mobile@2x.jpg 2x">
+								<source media="(max-width:767px)" srcset="./image/mobile/bread1-mobile.jpg 1x, ./image/mobile/bread1-mobile@2x.jpg 2x">
+								<img src="./image/mobile/bread1-mobile.jpg" alt="cut haircut">
+							</picture>
+							
 						</div>
 					</li>
 					<li class="beard__item">
 							<div class="beard__img" data-aos="zoom-in">
-								<img src="./image/mobile/bread2-mobile.jpg" alt="cut haircut">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./image/pc/bread2-pc.jpg 1x, ./image/pc/bread2_540-pc@2x.jpg 2x">
+									<source media="(min-width:768px)" srcset="./image/mobile/bread2-mobile.jpg 1x, ./image/mobile/bread2-mobile@2x.jpg 2x">
+									<source media="(max-width:767px)" srcset="./image/mobile/bread2-mobile.jpg 1x, ./image/mobile/bread2-mobile@2x.jpg 2x">
+									<img src="./image/mobile/bread2-mobile.jpg" alt="cut haircut">
+								</picture>
+								
 							</div>
 					</li>
 					<li class="beard__item">
 							<div class="beard__img" data-aos="zoom-in">
-								<img src="./image/mobile/bread3-mobile.jpg" alt="cut haircut">
+									<picture>
+									<source media="(min-width:1200px)" srcset="./image/pc/bread3-pc.jpg 1x, ./image/pc/bread3_540-pc@2x.jpg 2x">
+									<source media="(min-width:768px)" srcset="./image/mobile/bread3-mobile.jpg 1x, ./image/mobile/bread3-mobile@2x.jpg 2x">
+									<source media="(max-width:767px)" srcset="./image/mobile/bread3-mobile.jpg 1x, ./image/mobile/bread3-mobile@2x.jpg 2x">
+									<img src="./image/mobile/bread3-mobile.jpg" alt="cut haircut">
+								</picture>
+								
 							</div>
 					</li>
 					<li class="beard__item">
 						<div class="beard__img" data-aos="zoom-in">
-							<img src="./image/mobile/bread4-mobile.jpg" alt="cut haircut">
+								<picture>
+									<source media="(min-width:1200px)" srcset="./image/pc/bread4-pc.jpg 1x, ./image/pc/bread4_540-pc@2x.jpg 2x">
+									<source media="(min-width:768px)" srcset="./image/mobile/bread4-mobile.jpg 1x, ./image/mobile/bread4-mobile@2x.jpg 2x">
+									<source media="(max-width:767px)" srcset="./image/mobile/bread4-mobile.jpg 1x, ./image/mobile/bread4-mobile@2x.jpg 2x">
+									<img src="./image/mobile/bread4-mobile.jpg" alt="cut haircut">
+								</picture>
+							
 						</div>
 					</li>
 				</ul>
 			</div>
 				
 		</section>
-		<footer class="footer">
+		<footer id="contacts" class="footer">
 			<div class="footer__container container">
 				<div class="footer-big">
 					<ul class="footer-big__list">
 						<li class="footer-big__online-item">
-							<h2 class="footer-big__online-title footer-title" data-aos="zoom-in">Online-booking</h2>
-							<form class="form" autocomplete="on">
+							<h2 class="footer-big__online-title footer-title container" data-aos="zoom-in">Online-booking</h2>
+							<form class="form container" autocomplete="on">
 								<div class="form__date">
 										<div class="form__field">
 											
@@ -432,36 +501,43 @@
 										<label for="message" class="form__label">message</label>
 										
 									</div>
-								<button class="button footer-button">send</button>
-								</div>
 								
+								</div>
+								<button class="button footer-button">send</button>
 							
 							</form>
 						</li>
 						<li class="footer-big__contact-item">
-							<h2 class="footer-big__title footer-title" data-aos="zoom-in">Contacts</h2>
-							<adress class="footer-big__adress">
-								<ul class="footer-big__adress-list">
-									<li class="footer-big__adress-item">
-										<a href="" class="footer-big__adress-link"> <svg class="footer__big-icon" width="24" height="24"><use href="./image/icon/sprite.svg#icon-map-pin"></use></svg> st. Vasilkovaya, 7A
-										Kiev, 08132</a>
-									</li>
-									<li class="footer-big__adress-item">
-										<a href="tel:380441111111" class="footer-big__adress-link"> <svg class="footer__big-icon" width="24" height="24">
-												<use href="./image/icon/sprite.svg#icon-phone"></use>
-											</svg>+38 044 111 11 11</a>
-									</li>
-									<li class="footer-big__adress-item">
-										<a href="mail:barbershop@email.com" class="footer-big__adress-link"> <svg class="footer__big-icon" width="24" height="24">
-												<use href="./image/icon/sprite.svg#icon-mail"></use>
-											</svg>barbershop@email.com</a>
-									</li>
-								</ul>
-							</adress>
-							<div class="footer-big__working">
-								<p class="content-text footer-big--text">working hours</p>
-								<p class="footer-big__hours">Every day from 9:00 to 22:00</p>
+							<h2 class="footer-big__title footer-title container" data-aos="zoom-in">Contacts</h2>
+							<div class="footer-big__flex container">
+								<adress class="footer-big__adress ">
+									<ul class="footer-big__adress-list">
+										<li class="footer-big__adress-item">
+											<a href="" class="footer-big__adress-link"> <svg class="footer__big-icon" width="24" height="24">
+													<use href="./image/icon/sprite.svg#icon-map-pin"></use>
+												</svg> st. Vasilkovaya, 7A
+												Kiev, 08132</a>
+										</li>
+										<li class="footer-big__adress-item">
+											<a href="tel:380441111111" class="footer-big__adress-link"> <svg class="footer__big-icon" width="24"
+													height="24">
+													<use href="./image/icon/sprite.svg#icon-phone"></use>
+												</svg>+38 044 111 11 11</a>
+										</li>
+										<li class="footer-big__adress-item">
+											<a href="mail:barbershop@email.com" class="footer-big__adress-link"> <svg class="footer__big-icon"
+													width="24" height="24">
+													<use href="./image/icon/sprite.svg#icon-mail"></use>
+												</svg>barbershop@email.com</a>
+										</li>
+									</ul>
+								</adress>
+								<div class="footer-big__working">
+									<p class="content-text footer-big--text">working hours</p>
+									<p class="footer-big__hours">Every day from 9:00 to 22:00</p>
+								</div>
 							</div>
+							
 						</li>
 						
 					</ul>
@@ -471,10 +547,6 @@
 	</main>
 	
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/script.js"></script>
 </html>

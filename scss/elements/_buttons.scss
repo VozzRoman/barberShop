@@ -1,12 +1,18 @@
 
 .button-burger {
+@media screen and (max-width:767px) {
 	border: 0;
 	background-color: transparent;
+}
+@media screen and (min-width:768px){
+	display: none;
+}
 }
 .button-burger__icon {
 }
 
 .button {
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -20,17 +26,54 @@
 	line-height: 1.33;
 	letter-spacing: 0.09em;
 	background-color: transparent;
+@media screen and (min-width:1200px){
+	&:hover,
+	&:focus{
+		background-color: $hover-color;
+	}
+	
+}
+
+
 }
 
 .button--margin {
-	margin-top: 20px;
+	@media screen and (max-width:767px) {
+		margin-top: 20px;
+	}
+	@media screen and (min-width:768px) {
+		margin-bottom: 20px;
+	}
+	@media screen and (min-width:1200px) {
+			margin-bottom: 0;
+			margin-left: 45px;
+	}
+
 }
-.footer-button {
+.button-service{
 	margin-left: auto;
 	margin-right: auto;
-	padding: 12px 38px;
+	margin-top: 50px;
+
+}
+.footer-button {
+	width: 160px;
+margin-top: 44px;
+padding: 12px 38px;
+@media screen and (max-width:767px){
+	margin-left: auto;
+		margin-right: auto;
+		
+	
+}
 }
 .about-best__button--color {
 	color: $main-font-color;
 	margin-bottom: 20px;
+@media screen and (min-width:768px){
+	margin:0px;
+}
+@media screen and (min-width:1200px) {
+	margin: 0px;
+}
 }

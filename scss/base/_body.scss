@@ -2,5 +2,8 @@ body {
 	font-family:$main-font;
 	font-size: $main-font-size;
 	color: $main-font-color;
+	
+@media screen and (max-width:767px) {
 	padding-top: 76px;
+}
 }

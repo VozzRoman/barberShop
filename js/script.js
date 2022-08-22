@@ -12,7 +12,6 @@ const swiper = new Swiper('.section-slider__swiper', {
 		delay: 2000,
 	  },
   direction: 'horizontal',
-  loop: true,
   // If we need pagination
    pagination: {
 		el: '.swiper-pagination',
@@ -27,3 +26,18 @@ const swiper = new Swiper('.section-slider__swiper', {
   },
 
 });
+//-------прокрутка------//
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}

@@ -1,24 +1,43 @@
 //------footer-----//
 .footer {
-    padding: 100px 0;
+    
     background-color: $third-bg;
+
 }
 
-.footer__container {}
+.footer__container {
+    max-width: 768px;
+    padding: 0;
+@media screen and (min-width:1200px){
+    max-width: 1200px;
+    
+}
+}
 
 
 .footer-big {}
 
-.footer-big__list {}
+.footer-big__list {
+@media screen and (min-width:1200px){
+    display: flex;
+}
+}
 
 .footer-big__online-item {
 @media screen and (max-width:768px){
     margin-bottom: 40px;
     }
+padding: 100px 0;
+@media screen and (min-width:1200px){
+    flex: 1 1 auto;
+    padding: 100px 40px 0 0;
+}
 }
    
 
-.footer-big__online-title {}
+.footer-big__online-title {
+    
+}
 
 .footer-title {
     display: block;
@@ -29,12 +48,22 @@
     text-align: center;
     letter-spacing: 0.05em;
     margin-bottom: 40px;
+@media screen and (min-width:768px){
+    font-size: 42px;
+    text-align-last: left;
+}
 }
 
-.form {}
+.form {
+ 
+}
 
 .form__date {
     margin-bottom: 40px;
+@media screen and (min-width:768px){
+    display: flex;
+    margin-right: -30px;
+}
    
 }
 
@@ -47,6 +76,12 @@
           &:nth-child(3) {
               margin-bottom: 0;
           }
+@media screen and (min-width:768px) {
+    flex-basis: calc(100% - 30px / 2);
+    margin-right: 30px;
+    margin-bottom: 0;
+    }
+
 }
 
 .form__label {
@@ -90,6 +125,11 @@
 }
 
 .form__message {
+    .form__field{
+@media screen and (min-width:1200px) {
+            margin-right: 0; 
+    }
+    }
 }
 
 .footer__texarea {
@@ -100,8 +140,26 @@
 
 .footer-big__contact-item {
     text-align: center;
+    padding: 100px 0;
+    background-image: url("/image/tablet/footer-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+@media screen and (min-width:1200px){
+    flex: 0 0 570px;
+    padding-left: 100px;
+}
+}
+.footer-big__flex{
+@media screen and (min-width:768px){
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width:1200px) {
+   flex-direction: column;
+  
 }
 
+}
 .footer-big__adress-list {
    
     font-weight: 700;
@@ -112,8 +170,22 @@
 .footer-big__adress{
     display: block;
     margin-bottom: 40px;
+@media screen and (max-width:768px){
+    flex: 0 1 330px;
+    
 }
-.footer-big__adress-item {}
+@media screen and (min-width:1200px){
+    margin-bottom: 70px;
+}
+    
+}
+.footer-big__adress-item {
+    @media screen and (min-width:768px){
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+}
 
 .footer-big__adress-link {
     display: flex;
@@ -121,6 +193,9 @@
     justify-content: center;
     color: $contact-color;
     text-decoration: none;
+@media screen and (min-width:768px){
+    justify-content: left;
+}
 }
 
 .footer__big-icon {
@@ -137,4 +212,8 @@
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+@media screen and (min-width:1200px){
+text-align: left;
+}
+    
 }
