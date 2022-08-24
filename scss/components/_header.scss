@@ -155,9 +155,10 @@ text-decoration: none;
 font-size: 12px;
 font-weight: 600;
 line-height: 1.36;
+transition: color 250ms linear;
 @media screen and (min-width:1200px){
 	&:hover,
-		&:focus {
+	&:focus {
 			color: $hover-color;
 		}
 }
