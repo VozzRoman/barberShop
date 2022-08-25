@@ -430,7 +430,7 @@ address {
 .footer-big__contact-item {
   text-align: center;
   padding: 100px 0;
-  background-image: url("/image/tablet/footer-bg-tablet.png");
+  background-image: url("../image/tablet/footer-bg-tablet.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

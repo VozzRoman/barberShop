@@ -111,7 +111,7 @@ padding: 100px 0;
         font-weight: 600;
         line-height: 1.36;
         letter-spacing: 0.1em;
-@media screen and (min-width:1170px){
+@media screen and (min-width:1200px){
     &:hover,
     &:focus{
         border-bottom: 1px solid $primery-bg;
@@ -141,7 +141,7 @@ padding: 100px 0;
 .footer-big__contact-item {
     text-align: center;
     padding: 100px 0;
-    background-image: url("/image/tablet/footer-bg-tablet.png");
+    background-image: url("../image/tablet/footer-bg-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
 @media screen and (min-width:1200px){
